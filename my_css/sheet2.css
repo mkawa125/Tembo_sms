@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    font-family: "Segoe UI";
+    overflow-x: hidden;
+}
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    width: 200px;
+    background-color: rgb(90,90,90);
+}
+.nav ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+.nav-toggle-btn{
+    display: block;
+    position: absolute;
+    left: 200px;
+    width: 40px;
+    height: 40px;
+    background-color: #4b5257;
+}
+.content{
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+    color: black;
+}
+.fluid{
+    background-color: black;
+}
+.column_left{
+    left:0;
+    background-color: rgb(90,90,90);
+    
+}
+.nav2{
+    overflow: hidden;
+}
