@@ -10,11 +10,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/login-sheet.css">
     <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        .tembo-head{
+            font-size: 18px;
+            color: #E14A25;
+            font-weight: bold;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
 
 </head>
 <body class="body">
 <div class="box-large">
-    <p class="login-head"><img src="http://localhost/Tembo_sms/images/logo.png" width="90" style="margin: 0px 5px">TEMBO_SMS MESSAGING PLATFORM</p>
+    <p class="tembo-head">TEMBOTEL MOBILE MESSAGING PLATFORM</p>
     <div class="box">
         <div>
             <p class="please">Enter your details to login</p>

@@ -2,26 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: Saidi Dahabu
- * Date: 25/07/2017
- * Time: 11:53
+ * Date: 04/08/2017
+ * Time: 13:39
  */
 ?>
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Tembotel: Messages(0)</title>
+    <title>code ngumu kumamaakeeee</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/sheet1.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/sheet2.css">
     <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/demosheet.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/services_sheet.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/my_css/account.css">
     <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="http://localhost/Tembo_sms/font-awesome/css/font-awesome.min.css">
+
 
     <style>
         .fa{
@@ -31,8 +27,6 @@
         }
 
     </style>
-
-
 </head>
 <body>
 <div class="container-fluid">
@@ -41,6 +35,7 @@
             <div class="row logo_div" style="background-color: red">
                 <img src="http://localhost/Tembo_sms/images/logo.png" width="100%" style="margin-top: 0px">
             </div>
+
             <ul style="list-style: none">
                 <li><a href="<?php echo base_url()?>index.php/Redirect_controller/dashboard"><button type="button" class="navigation_button"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</button></a></li>
                 <li><a href="<?php echo base_url()?>index.php/Redirect_controller/messages"><button type="button" class="navigation_button"><i class="fa fa-envelope" aria-hidden="true"></i>Messages</button></a></li>
@@ -63,44 +58,41 @@
         </div>
 
         <div class="col-sm-10">
-            <div class="row" style="border-bottom: solid 1px rgb(200,200,200);">
-
-                <div class="col-sm-7" style="background-color: white">
-                    <p>Messages</p>
-                </div>
-
-                <div class=" col-sm-5" style="background-color: white">
-                    <div>
-                        <button type="button" class="btn btn-success ">New Message</button>
-                        <button type="button" class="btn btn-default dropdown-toggle">Call <span class="caret"></span></button>
-                        <button type="button" class="btn btn-default dropdown-toggle">More<span class="caret"></span> </button>
-                    </div>
-                </div>
-            </div>
-
             <div class="row" style="">
                 <div class="col-sm-3 message_border">
-                    <input type="text" name="search" placeholder="Search" class="search">
-                    <button type="button" class="btn btn-info search_button">
-                        <span class="glyphicon glyphicon-search"></span><p class="search_in">Search</p>
-                    </button>
-
-                    <div class="box_message">
-                        <button type="button" class="sms_button">Conversation</button>
-                        <button type="button" class="sms_button">Broadcast</button>
-                        <button type="button" class="sms_button selected">Scheduled</button>
-                        <button type="button" class="sms_button">All messages</button>
-                        <button type="button" class="sms_button">Incoming</button>
-                        <button type="button" class="sms_button">Outgoing</button>
+                    <div class="box_message-acc">
+                        <p class="head-acc"><?php echo $_SESSION['organization_name']?></p>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/billing"><button type="submit" class="button-account button-account-selected"><i class="fa fa-credit-card" aria-hidden="true"></i>Billing</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/project"><button type="button" class="button-account"><i class="fa fa-folder-o" aria-hidden="true"></i>Project</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/accounts"><button type="button" class="button-account"><i class="fa fa-users" aria-hidden="true"></i>User Accounts</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/org_settings"><button type="button" class="button-account selected"><i class="fa fa-cog" aria-hidden="true"></i>Organization setting</button></a>
                     </div>
-                    <input type="checkbox" name="box" style="margin: 10px">Filters
+
+                    <div class="box_message-acc">
+                        <p class="head-acc"><?php echo $_SESSION['name']?></p>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/personal_settings"><button type="submit" class="button-account"><i class="fa fa-user" aria-hidden="true"></i>Personal settings</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/security"><button type="button" class="button-account"><i class="fa fa-lock" aria-hidden="true"></i>Account security</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/developer_API"><button type="button" class="button-account"><i class="fa fa-code" aria-hidden="true"></i>Developer API</button></a>
+                        <a href="<?php echo base_url()?>index.php/Account_controller/organizations"><button type="button" class="button-account selected"><i class="fa fa-globe" aria-hidden="true"></i>Organizations</button></a>
+                    </div>
                 </div>
 
-
                 <div class="col-sm-9">
-                    <br>
-                    <br>
-                    <p>The status of the messages goes here from the database</p>
+                    <div class="row" style="border-bottom: 1px solid rgb(200,200,200">
+
+                    <div class="col-sm-8">
+                        <h4>Billing</h4>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="#"><button class="btn-default1">Change plans</button> </a>
+                        <a href="#"><button class="btn-default1">Add funds</button> </a>
+                    </div>
+                    </div>
+
+
+                <h6 class="acc-head" style="border-bottom: 1px solid rgb(200,200,200">Service planning:</h6>
+                <h6 class="acc-head" style="border-bottom: 1px solid rgb(200,200,200">Remaining Credit:</h6>
                 </div>
             </div>
 

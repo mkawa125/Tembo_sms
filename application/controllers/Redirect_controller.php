@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: papaa_mukuru
+ * User: Saidi Dahabu
  * Date: 03/08/2017
  * Time: 11:39
  */
@@ -18,22 +18,22 @@ class Redirect_controller extends CI_Controller{
     }
 
     public function dashboard(){
-        $this->load->model('Redirect_user/dashboard');
+        $this->load->view('user_pages/welcome.php');
     }
-    public function message(){
-        $this->load->model('Redirect_user/message');
+    public function messages(){
+        $this->load->view('message_pages/all_messages.php');
     }
     public function contacts(){
-        $this->load->model('Redirect_user/contacts');
+        $this->load->model('Redirect_user/contacts.php');
     }
     public function services(){
-        $this->load->model('Redirect_user/services');
+        $this->load->view('service_pages/services.php');
     }
     public function phones(){
         $this->load->model('Redirect_user/phones');
 
-    }public function account(){
-    $this->load->model('Redirect_user/account');
+    }public function accounts(){
+    $this->load->view('account_views/account.php');
     }
     public function upgrade_plans(){
         $this->load->model('Redirect_user/upgrade_plans');
