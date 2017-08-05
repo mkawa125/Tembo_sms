@@ -1,0 +1,235 @@
+body {
+    overflow: auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 250px;
+    height: 700px;
+    background-color: rgb(90, 90, 90);
+    overflow: hidden;
+    position: fixed;
+}
+
+.incoming_navbar {
+    height: 700px;
+    background-color: #333;
+    overflow: hidden;
+    border-right: 2px solid rgb(200, 200, 200);
+    color: #FDFDFD;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FDFDFD;
+    padding: 10px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navbar ul li:hover {
+    background-color: black;
+    transition: linear all 0.40s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.small_column {
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    margin: 12px;
+    height: 400px;
+}
+
+.top_navigation {
+    text-align: left;
+    width: 100%;
+    border-bottom: solid 2px rgb(200, 200, 200);
+    padding: 25px;
+}
+
+.navigation {
+    border-bottom: solid 1px rgb(200, 200, 200);
+    margin-bottom: 10px;
+    padding: 15px;
+    color: rgb(90, 90, 90);
+}
+
+.half_black {
+    border-bottom: solid 1px rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    padding: 12px;
+}
+
+.half_black a {
+    text-decoration: none;
+}
+
+.black {
+    color: black;
+    border-bottom: solid 1px rgb(200, 200, 200);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.services {
+    padding-top: 20px;
+}
+
+.listing {
+    padding: 20px;
+}
+
+.table_content {
+    width: 50px;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.message_border {
+    height: 640px;
+    border-right: 2px solid rgb(200, 200, 200);
+    border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+.search {
+    border-radius: 8px;
+    border: 2px solid rgb(200, 200, 200);
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+}
+
+.search_button {
+    padding: 2px;
+    height: 40px;
+    border: 2px solid rgb(200, 200, 200);
+    margin: 0;
+    width: 70px;
+
+}
+
+.search_in {
+    font-size: 15px;
+
+}
+
+.box_message {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    margin: 12px;
+    height: 400px;
+    padding: 10px;
+}
+
+.sms_button {
+    background-color: #EBEDEF;
+    color: #808B96;
+    width: 160px;
+    margin: 8px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.selected {
+    background-color: #D35400;
+    color: white;
+}
+
+.logo_div {
+    background-color: red;
+    padding: 0;
+    height: 80px;
+
+}
+
+.navigation_button {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    width: 180px;
+    margin: 1px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.navigation_button:hover {
+    background-color: #D35400;
+    color: white;
+    border-radius: 0;
+    margin: auto 0 auto 0;
+}
+
+.nav_selected {
+    background-color: #464C81;
+    color: #FDFDFD;
+    border-radius: 0;
+}
+
+.container-box {
+    background-color: #F6DDCC;
+}
+
+.box_check {
+    margin: 5px;
+}
+
+.login-head {
+    margin: 20px 10px 10px 10px;
+    color: black;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-btn {
+    padding: 5px;
+    border: 2px solid rgb(90, 90, 90);
+}
+
+.box-login {
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+
+}
+
+.badge-success1 {
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+
+.box-account {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    margin: 8px;
+    height: 250px;
+    padding: 5px;
+}
