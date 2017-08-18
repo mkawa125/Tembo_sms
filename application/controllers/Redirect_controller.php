@@ -31,7 +31,7 @@ class Redirect_controller extends CI_Controller
 
     public function contacts()
     {
-        $this->load->model('Redirect_user/contacts.php');
+        $this->load->view('contacts/contacts_view.php');
     }
 
     public function services()
@@ -53,5 +53,26 @@ class Redirect_controller extends CI_Controller
     public function upgrade_plans()
     {
         $this->load->model('Redirect_user/upgrade_plans');
+
+    }
+
+    public function user_projects()
+    {
+        $this->load->view('user_pages/user_projects.php');
+    }
+
+    public function add_project()
+    {
+        $this->load->view('user_pages/add_projects.php');
+    }
+
+    public function phone()
+    {
+        $this->load->view('phones_pages/phones.php');
+    }
+
+    public function add_phone()
+    {
+        $this->load->view('phones_pages/add_phone.php');
     }
 }

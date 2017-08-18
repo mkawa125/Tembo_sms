@@ -18,14 +18,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             color: #E14A25;
             font-weight: bold;
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            text-align: center;
         }
+
+        .btn-primary {
+            border-radius: 0;
+        }
+
+        .btn-success {
+            border-radius: 0;
+        }
+
     </style>
 
 </head>
 <body class="body">
 <div class="box-large">
     <p class="tembo-head">TEMBOTEL MOBILE MESSAGING PLATFORM</p>
-    <div class="box">
+    <div class="box" style="background-color: rgb(224, 255, 255)">
         <div>
             <p class="please">Enter your details to login</p>
         </div>
@@ -68,8 +78,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div>
                 <button type="submit" class="btn btn-primary paragraph" style="margin-right: 10px" name="login">LOGIN
                 </button>
-                <a href="<?php echo base_url() ?>index.php/Auth/register"
-                <button type="submit" class="btn btn-success paragraph" name="register">CREATE ACCOUNT</button>
+                <a href="<?php echo base_url() ?>index.php/Auth/register">
+                    <button type="button" class="btn btn-success paragraph" name="register">CREATE ACCOUNT</button>
                 </a>
             </div>
 

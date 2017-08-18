@@ -29,9 +29,14 @@
             font-weight: bold;
             font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
         }
+
+        .jumbotron {
+            background-color: rgb(224, 255, 255);
+            border: 1px solid rgb(200, 200, 200);
+        }
     </style>
 </head>
-<body class="body" style="background-color: #F6DDCC">
+<body class="body" style="background-color: rgb(188, 143, 143)">
 <div class="container">
     <div class="col-lg-6 col-sm-6 col-xs-6" style="margin: auto">
         <div class="jumbotron paragraph" style="margin-top: 20px">
@@ -99,7 +104,9 @@
                 <p> By clicking REGISTER button you agree TemboSMS's <a
                             href="<?php echo base_url(); ?>my_views/php_pages/login.php">Terms of services</a></p>
 
-                <button type="submit" class="btn btn-lg btn-success paragraph" name="register">REGISTER</button>
+                <button type="submit" class="btn btn-lg btn-success paragraph" name="register" style="border-radius: 0">
+                    REGISTER
+                </button>
             </form>
         </div>
     </div>

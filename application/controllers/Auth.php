@@ -161,6 +161,7 @@ class Auth extends CI_Controller
                 $_SESSION['email'] = $user->email;
                 $_SESSION['name'] = $user->name;
                 $_SESSION['organization_name'] = $user->organization_name;
+                $_SESSION['user_id'] = $user->user_id;
 
 
                 //redirect user

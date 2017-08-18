@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tembo_sms organizations</title>
+    <title>Tembo_sms developersI</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
                                                                            aria-hidden="true"></i>Messages
                         </button>
                     </a></li>
-                <li><a href="#">
+                <li><a href="<?php echo base_url() ?>index.php/Redirect_controller/contacts">
                         <button type="button" class="navigation_button"><i class="fa fa-address-book"
                                                                            aria-hidden="true"></i>Contact
                         </button>
@@ -56,7 +56,7 @@
                         <button type="button" class="navigation_button"><i class="fa fa-server" aria-hidden="true"></i>Services
                         </button>
                     </a></li>
-                <li><a href="#">
+                <li><a href="<?php echo base_url() ?>index.php/Redirect_controller/phone">
                         <button type="button" class="navigation_button"><i class="fa fa-mobile" aria-hidden="true"
                                                                            style="font-size: 30px"></i>Phones
                         </button>
@@ -70,12 +70,12 @@
                 <br>
 
 
-                <li><a href="#">
-                        <button type="button" class="navigation_button"><i class="fa fa-user-circle"
-                                                                           aria-hidden="true"></i><?php echo $_SESSION['email'] ?>
+                <li><a href="<?php echo base_url() ?>index.php/Account_controller/personal_settings">
+                        <button type="button" class="navigation_button "><i class="fa fa-user-circle"
+                                                                            aria-hidden="true"></i><?php echo $_SESSION['email'] ?>
                         </button>
                     </a></li>
-                <li><a href="#">
+                <li><a href="<?php echo base_url() ?>index.php/Redirect_controller/user_projects">
                         <button type="button" class="navigation_button"><i class="fa fa-folder"
                                                                            aria-hidden="true"></i><?php echo $_SESSION['organization_name'] ?>
                         </button>
@@ -110,8 +110,8 @@
                     <div class="box_message-acc">
                         <p class="head-acc"><?php echo $_SESSION['organization_name'] ?></p>
                         <a href="<?php echo base_url() ?>index.php/Account_controller/billing">
-                            <button type="submit" class="button-account d"><i class="fa fa-credit-card"
-                                                                              aria-hidden="true"></i>Billing
+                            <button type="submit" class="button-account "><i class="fa fa-credit-card"
+                                                                             aria-hidden="true"></i>Billing
                             </button>
                         </a>
                         <a href="<?php echo base_url() ?>index.php/Account_controller/project">
@@ -140,18 +140,19 @@
                             </button>
                         </a>
                         <a href="<?php echo base_url() ?>index.php/Account_controller/security">
-                            <button type="button" class="button-account"><i class="fa fa-lock" aria-hidden="true"></i>Account
+                            <button type="button" class="button-account "><i class="fa fa-lock" aria-hidden="true"></i>Account
                                 security
                             </button>
                         </a>
                         <a href="<?php echo base_url() ?>index.php/Account_controller/developer_API">
-                            <button type="button" class="button-account"><i class="fa fa-code" aria-hidden="true"></i>Developer
+                            <button type="button" class="button-account button-account-selected"><i class="fa fa-code"
+                                                                                                    aria-hidden="true"></i>Developer
                                 API
                             </button>
                         </a>
                         <a href="<?php echo base_url() ?>index.php/Account_controller/organizations">
-                            <button type="button" class="button-account button-account-selected"><i class="fa fa-globe"
-                                                                                                    aria-hidden="true"></i>Organizations
+                            <button type="button" class="button-account selected"><i class="fa fa-globe"
+                                                                                     aria-hidden="true"></i>Organizations
                             </button>
                         </a>
                     </div>
